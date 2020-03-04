@@ -1,0 +1,25 @@
+{
+  "name": "web-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abrrek/WEB-START.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abrrek/WEB-START/issues"
+  },
+  "homepage": "https://github.com/Abrrek/WEB-START#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

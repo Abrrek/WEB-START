@@ -3,6 +3,7 @@ const browserSync = require('browser-sync').create();
 const cssnano = require('gulp-cssnano');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 
 function bs() {
 	serveSass();
@@ -19,6 +20,9 @@ function bs() {
 
 function css() {
 	return src('./css/*.css')
+			.pipe(autoprefixer({
+				cascade: false
+			}))
 			.pipe(cssnano())
 			.pipe(rename({
 				suffix: ".min"
@@ -27,7 +31,7 @@ function css() {
 };
 
 function serveSass() {
-	return src('./sass/**/*.sass')
+	return src('./sass/**/*.sass', './sass/**/*.scss')
     .pipe(sass())
 		.pipe(dest('./css'))
 		.pipe(browserSync.stream());

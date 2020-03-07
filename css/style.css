@@ -325,12 +325,22 @@ template {
   .button--primary {
     background-color: #E3B873;
     color: #fff; }
+  .button--outline {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff; }
 
 .container {
+  width: 85%;
   max-width: 1256px;
   margin: auto; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0; }
 
@@ -354,6 +364,66 @@ template {
 
 .contacts__phone {
   margin-right: 45px; }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: #131313 url("../img/hero_bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  padding-top: 100px; }
+  .hero__instagram {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 80px;
+    height: 100%; }
+  .hero__scroll-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-width: 247px;
+    min-height: 97px;
+    background-color: #131313;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff; }
+  .hero__content {
+    max-width: 670px; }
+
+.content {
+  color: #fff; }
+  .content__description {
+    font-size: 22px;
+    max-width: 500px; }
+  .content__button {
+    margin-right: 20px; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313; }
+  .instagram__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E3B873;
+    transform: rotate(90deg); }
+
+.title {
+  margin: 0;
+  font-family: 'Yeseve One', cursive;
+  text-transform: uppercase;
+  font-size: 40px; }
+  .title--primary {
+    color: #E3B873; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
 
 body {
   font-family: 'Futura Book', sans-serif;

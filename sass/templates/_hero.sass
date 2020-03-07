@@ -1,0 +1,57 @@
+.hero
+	display: flex
+	flex-direction: column
+	justify-content: center
+	position: relative
+	background: $dark url('../img/hero_bg.jpg') no-repeat center / cover
+	height: 100vh
+	padding-top: 100px
+	&__instagram
+		position: absolute
+		left: 0
+		top: 0
+		max-width: 80px
+		height: 100%
+	&__scroll-down
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		left: 0
+		bottom: 0
+		min-width: 247px
+		min-height: 97px
+		background-color: $dark
+		text-transform: uppercase
+		text-decoration: none
+		color: $light
+	&__content 
+		max-width: 670px
+
+.content
+	color: $light
+	&__description
+		font-size: 22px
+		max-width: 500px
+	&__button
+		margin-right: 20px
+		
+
+.instagram
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: $dark
+	&__link
+		text-transform: uppercase
+		text-decoration: none
+		color: $primary
+		transform: rotate(90deg)
+
+.title
+	margin: 0
+	font-family: 'Yeseve One', cursive
+	text-transform: uppercase
+	font-size: 40px
+	&--primary
+		color: $primary

@@ -554,13 +554,15 @@ img {
   padding: 1.214rem 2.6rem; }
 
 .design--image {
-  margin-bottom: 24px; }
+  margin-bottom: 15px; }
 
 .design__description {
   width: 53rem;
   font-size: 1.42rem;
   color: #363636;
-  margin: 0 auto 39px auto; }
+  margin: 0 auto 43px auto;
+  text-align: center;
+  line-height: 2rem; }
 
 @media screen and (max-width: 1200px) {
   html {

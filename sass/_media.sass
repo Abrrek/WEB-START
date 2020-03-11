@@ -1,6 +1,9 @@
 @media screen and ( max-width: 1200px )
 	html
 		font-size: 12px
+	.hero
+		&__content
+			// margin-left: 0
 
 	.nav
 		&__item
@@ -17,33 +20,45 @@
 		&__button
 			min-width: 0
 
-	@media screen and ( max-width: 570px )
-		.contacts
-			&__phone
-				margin-right: 0
-				color: $light
-				text-decoration: none
-			&__button
-				display: none
+@media screen and ( max-width: 760px )
+	.row
+		flex-direction: column
+		align-items: center
+	.types
+		&__card
+			margin-bottom: 5rem
+	.card
+		&__text
+			margin-left: 0
 
-		.title
-			font-size: 1.64rem
-			margin-top: 85px
+@media screen and ( max-width: 570px )
+	.contacts
+		&__phone
+			margin-right: 0
+			color: $light
+			text-decoration: none
+		&__button
+			display: none
 
-		.hero
-			&__scroll-down
-				display: none
-			&__content
-				max-width: 22.86rem
-		
-		.content
-			&__description
-				margin-bottom: 2.28rem
-				font-size: 1.29rem
-			&__button
-				display: block
-				min-width: 22.86rem
-				margin-bottom: 1.85rem
+	.title
+		font-size: 1.64rem
+		margin-top: 85px
+		line-height: 2.7rem
+
+	.hero
+		&__scroll-down
+			display: none
+		&__content
+			max-width: 22.86rem
+	
+	.content
+		&__description
+			margin-bottom: 2.28rem
+			font-size: 1.29rem
+		&__button
+			display: block
+			min-width: 22.86rem
+			margin-bottom: 1.85rem
 
 @media screen and ( max-height: 520px )
 	.hero

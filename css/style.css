@@ -321,7 +321,8 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 0.94rem; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -344,9 +345,12 @@ template {
 *, *::before, *::after {
   box-sizing: border-box; }
 
+html {
+  font-size: 14px; }
+
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 .section-title {
   text-align: center;
@@ -385,7 +389,7 @@ body {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: 2.85rem;
   transition: 0.2s;
   cursor: pointer; }
   .nav__item:hover {
@@ -426,8 +430,8 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.6rem;
+    min-height: 6.92rem;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
@@ -442,12 +446,13 @@ body {
       margin-left: 12px; }
   .hero__content {
     position: relative;
-    max-width: 670px; }
+    max-width: 47.85rem;
+    margin-right: 4.28rem; }
 
 .content {
   color: #fff; }
   .content__description {
-    font-size: 22px;
+    font-size: 1.57rem;
     max-width: 500px; }
   .content__button {
     margin-right: 20px; }
@@ -476,13 +481,45 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 40px; }
+  font-size: 2.85rem; }
   .title--primary {
     color: #E3B873; }
 
-*, *::before, *::after {
-  box-sizing: border-box; }
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; }
+  .nav__item {
+    margin-right: 1rem; } }
 
-body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
+  .hero__instagram {
+    display: none; }
+  .hero__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 992px) and (max-width: 570px) {
+  .contacts__phone {
+    margin-right: 0;
+    color: #fff;
+    text-decoration: none; }
+  .contacts__button {
+    display: none; }
+  .title {
+    font-size: 1.64rem; }
+  .hero__scroll-down {
+    display: none; }
+  .hero__content {
+    max-width: 22.86rem; }
+  .hero__description {
+    margin-bottom: 2.28rem;
+    font-size: 1.29rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem; } }
+
+@media screen and (max-height: 520px) {
+  .hero__scroll-down {
+    display: none; } }

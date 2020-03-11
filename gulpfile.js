@@ -10,6 +10,9 @@ function bs() {
 	browserSync.init({
 			server: {
 					baseDir: "./"
+			},
+			socket: {
+				domain: "localhost:3000"
 			}
 	});
 	watch("./*.html").on('change', browserSync.reload);

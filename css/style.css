@@ -506,6 +506,12 @@ img {
 .types__section-title {
   margin-bottom: 1rem; }
 
+.types--image {
+  margin-bottom: 27px; }
+
+.types__heading {
+  font-size: 1.4rem; }
+
 .row {
   display: flex;
   align-items: flex-start;
@@ -546,6 +552,15 @@ img {
   background-color: #E3B873;
   color: #fff;
   padding: 1.214rem 2.6rem; }
+
+.design--image {
+  margin-bottom: 24px; }
+
+.design__description {
+  width: 53rem;
+  font-size: 1.42rem;
+  color: #363636;
+  margin: 0 auto 39px auto; }
 
 @media screen and (max-width: 1200px) {
   html {

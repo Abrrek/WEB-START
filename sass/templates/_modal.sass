@@ -1,4 +1,5 @@
 .modal
+	visibility: hidden
 	display: flex
 	align-items: center
 	justify-content: center
@@ -11,6 +12,9 @@
 	width: 100%
 	height: 100%
 	background-color: rgba($dark, 0.6)
+	&--visible
+		opacity: 1
+		visibility: visible
 	&__dialog
 		position: relative
 		max-width: 36.36rem
